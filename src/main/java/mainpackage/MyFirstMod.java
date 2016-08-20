@@ -11,10 +11,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import proxy.ServerProxy;
 
 @Mod(modid = MyFirstMod.MODID, version = MyFirstMod.VERSION)
 public class MyFirstMod
@@ -26,6 +28,9 @@ public class MyFirstMod
     private static Item reddiamond = new ItemReddiamond();
 
     private static Block bombOre = new BlockBombOre();
+
+    @SidedProxy(clientSide = "proxy.ClientProxy", serverSide = "proxy.ServerProxy")
+    public static ServerProxy proxy;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -39,6 +44,8 @@ public class MyFirstMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+        proxy.registerClient();
+
         GameRegistry.registerItem(superCake, "SuperCake");
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(superCake,0, new ModelResourceLocation(MODID + ":SuperCake", "inventory"));
         GameRegistry.registerItem(reddiamond, "reddiamond");

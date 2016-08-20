@@ -6,6 +6,8 @@ package proxy;
 public class ClientProxy extends ServerProxy {
 
     @Override
-    public void registerClient(){}
+    public void registerClient(){
+
+    }
 
 }

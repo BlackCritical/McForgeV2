@@ -1,24 +1,10 @@
-[06:48:02] [Client thread/INFO]: Setting user: Player606
-[06:48:07] [Client thread/WARN]: Skipping bad option: lastServer:
-[06:48:07] [Client thread/INFO]: LWJGL Version: 2.9.4
-[06:48:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CakeMod
-[06:48:17] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:48:17] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[06:48:17] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[06:48:18] [Thread-8/INFO]: OpenAL initialized.
-[06:48:18] [Sound Library Loader/INFO]: Sound engine started
-[06:48:23] [Client thread/INFO]: Created: 16x16 textures-atlas
-[06:48:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CakeMod
-[06:48:28] [Client thread/INFO]: SoundSystem shutting down...
-[06:48:28] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[06:48:28] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:48:29] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[06:48:29] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[06:48:29] [Thread-10/INFO]: OpenAL initialized.
-[06:48:29] [Sound Library Loader/INFO]: Sound engine started
-[06:48:34] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[06:48:35] [Client thread/WARN]: Skipping bad option: lastServer:
-[06:48:36] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[06:48:59] [Client thread/INFO]: Stopping!
-[06:48:59] [Client thread/INFO]: SoundSystem shutting down...
-[06:48:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[06:57:16] [Server thread/INFO]: Starting minecraft server version 1.10.2
+[06:57:25] [Server thread/INFO]: Loading properties
+[06:57:25] [Server thread/WARN]: server.properties does not exist
+[06:57:25] [Server thread/INFO]: Generating new properties file
+[06:57:25] [Server thread/WARN]: Failed to load eula.txt
+[06:57:25] [Server thread/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[06:57:25] [Server thread/INFO]: Stopping server
+[06:57:25] [Server thread/INFO]: Saving worlds
+[06:57:25] [Server Shutdown Thread/INFO]: Stopping server
+[06:57:25] [Server Shutdown Thread/INFO]: Saving worlds
