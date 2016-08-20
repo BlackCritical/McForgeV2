@@ -1,7 +1,9 @@
 package com.example.examplemod.myfirstmod;
 
+import com.example.examplemod.blocks.BlockBombOre;
 import com.example.examplemod.items.ItemReddiamond;
 import com.example.examplemod.items.ItemSuperCake;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
@@ -23,6 +25,8 @@ public class MyFirstMod
     private static Item superCake = new ItemSuperCake();
     private static Item reddiamond = new ItemReddiamond();
 
+    private static Block bombOre = new BlockBombOre();
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -36,9 +40,12 @@ public class MyFirstMod
     public void init(FMLInitializationEvent event)
     {
         GameRegistry.registerItem(superCake, "SuperCake");
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(superCake,0, new ModelResourceLocation("myfirstmod:SuperCake", "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(superCake,0, new ModelResourceLocation(MODID + ":SuperCake", "inventory"));
         GameRegistry.registerItem(reddiamond, "reddiamond");
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(reddiamond,0, new ModelResourceLocation("myfirstmod:reddiamond", "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(reddiamond,0, new ModelResourceLocation(MODID + ":reddiamond", "inventory"));
+
+        GameRegistry.registerBlock(bombOre, "bomb_ore");
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(bombOre), 0, new ModelResourceLocation(MODID + ":bomb Ore", "inventory"));
     }
     
     @EventHandler

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "myfirstmod:blocks/bomb_ore"  // Pfad zu dieser Datei: assets/MODID/textures/blocks/dein_block.png
+  }
+}

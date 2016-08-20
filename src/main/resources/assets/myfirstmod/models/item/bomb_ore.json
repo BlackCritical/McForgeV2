@@ -1,0 +1,8 @@
+{
+  "parent": "myfirstmod:block/bomb_ore", // <--- Pfad zur Datei: assets/MODID/models/block/dein_block.json
+  "display": {
+    "thirdperson": {
+      "rotation": [ 10, -45, 170 ],
+      "translation": [ 0, 1.5, -2.75 ],
+      "scale": [ 0.375, 0.375, 0.375 ]
+    }
