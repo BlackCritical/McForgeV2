@@ -9,10 +9,7 @@ public class BasicItem extends Item {
 
     public BasicItem(String name){
         setUnlocalizedName(name);
-    }
-
-    public String getSimpleName(){
-        return getUnlocalizedName().substring(5);
+        setRegistryName(name);
     }
 
 }

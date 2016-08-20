@@ -1,13 +1,9 @@
 package mainpackage;
 
-import mainpackage.blocks.BlockBombOre;
 import items.ItemReddiamond;
 import items.ItemSuperCake;
-import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import blocks.BlockBombOre;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -24,10 +20,10 @@ public class MyFirstMod
     public static final String MODID = "myfirstmod";
     public static final String VERSION = "1.0";
 
-    private static Item superCake = new ItemSuperCake();
-    private static Item reddiamond = new ItemReddiamond();
+    public static ItemSuperCake superCake = new ItemSuperCake();
+    public static ItemReddiamond reddiamond = new ItemReddiamond();
 
-    private static Block bombOre = new BlockBombOre();
+    public static BlockBombOre bombOre = new BlockBombOre();
 
     @SidedProxy(clientSide = "proxy.ClientProxy", serverSide = "proxy.ServerProxy")
     public static ServerProxy proxy;
@@ -35,6 +31,8 @@ public class MyFirstMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        GameRegistry.registerItem(reddiamond);
+
     	ItemStack woolStack = new ItemStack(Blocks.WOOL, 4);
     	ItemStack stoneStack = new ItemStack(Blocks.STONE);
     	
@@ -46,13 +44,6 @@ public class MyFirstMod
     {
         proxy.registerClient();
 
-        GameRegistry.registerItem(superCake, "SuperCake");
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(superCake,0, new ModelResourceLocation(MODID + ":SuperCake", "inventory"));
-        GameRegistry.registerItem(reddiamond, "reddiamond");
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(reddiamond,0, new ModelResourceLocation(MODID + ":reddiamond", "inventory"));
-
-        GameRegistry.registerBlock(bombOre, "bomb_ore");
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(bombOre), 0, new ModelResourceLocation(MODID + ":bomb_ore", "inventory"));
     }
     
     @EventHandler
@@ -60,4 +51,5 @@ public class MyFirstMod
     {
 
     }
+
 }

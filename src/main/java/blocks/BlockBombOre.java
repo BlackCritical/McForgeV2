@@ -1,4 +1,4 @@
-package mainpackage.blocks;
+package blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
