@@ -5,6 +5,7 @@ import items.ItemReddiamond;
 import items.ItemSuperCake;
 import blocks.BlockBombOre;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -49,6 +50,8 @@ public class MyFirstMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+        GameRegistry.addRecipe(new ItemStack(Blocks.TNT,32), "xxx", " r ", "xxx", 'x', bombOre, 'r', Items.REDSTONE);
+
         proxy.registerClient();
     }
     
