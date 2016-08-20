@@ -13,6 +13,7 @@ public class ClientProxy extends ServerProxy {
     @Override
     public void registerClient(){
         registerItemModel(MyFirstMod.reddiamond);
+        registerItemModel(MyFirstMod.superCake);
     }
 
     public static void registerItemModel(BasicItem item){

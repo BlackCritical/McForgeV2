@@ -1,9 +1,11 @@
 package mainpackage;
 
+import blocks.BasicBlock;
 import items.ItemReddiamond;
 import items.ItemSuperCake;
 import blocks.BlockBombOre;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -31,12 +33,17 @@ public class MyFirstMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        GameRegistry.registerItem(reddiamond);
+        GameRegistry.register(reddiamond);
+        GameRegistry.register(superCake);
+
 
     	ItemStack woolStack = new ItemStack(Blocks.WOOL, 4);
     	ItemStack stoneStack = new ItemStack(Blocks.STONE);
     	
     	GameRegistry.addShapelessRecipe(woolStack, stoneStack);
+
+
+        registerBlock(bombOre);
     }
     //test
     @EventHandler
@@ -50,6 +57,11 @@ public class MyFirstMod
     public void postInit(FMLPostInitializationEvent event)
     {
 
+    }
+
+    public static void registerBlock(BasicBlock block){
+        GameRegistry.register(block);
+        GameRegistry.register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
     }
 
 }
