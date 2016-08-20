@@ -1,4 +1,4 @@
-package com.example.examplemod.items;
+package mainpackage.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
