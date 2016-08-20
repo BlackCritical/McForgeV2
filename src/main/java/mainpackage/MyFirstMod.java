@@ -45,12 +45,11 @@ public class MyFirstMod
 
         registerBlock(bombOre);
     }
-    //test
+
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         proxy.registerClient();
-
     }
     
     @EventHandler
@@ -61,7 +60,7 @@ public class MyFirstMod
 
     public static void registerBlock(BasicBlock block){
         GameRegistry.register(block);
-        GameRegistry.register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
+        GameRegistry.register(new ItemBlock(block).setRegistryName(block.name));
     }
 
 }

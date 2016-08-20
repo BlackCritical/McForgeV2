@@ -8,9 +8,12 @@ import net.minecraft.block.material.Material;
  */
 public class BasicBlock extends Block {
 
+    public String name;
+
     public BasicBlock(String name, Material materialIn) {
         super(materialIn);
         setUnlocalizedName(name);
         setRegistryName(name);
+        this.name = name;
     }
 }

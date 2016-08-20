@@ -10,7 +10,7 @@ public class BlockBombOre extends BasicBlock{
 
     public BlockBombOre() {
         super("bomb_ore", Material.ROCK);
-        this.setHardness(1);
-        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        setHardness(2);
+        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     }
 }

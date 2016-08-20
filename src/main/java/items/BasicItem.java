@@ -10,6 +10,10 @@ public class BasicItem extends Item {
     public BasicItem(String name){
         setUnlocalizedName(name);
         setRegistryName(name);
-}
+    }
+
+    public String getSimpleName(){
+        return getUnlocalizedName().substring(5);
+    }
 
 }
