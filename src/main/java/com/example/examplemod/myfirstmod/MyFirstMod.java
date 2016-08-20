@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = MyFirstMod.MODID, version = MyFirstMod.VERSION)
+@Mod(modid = "myfirstmod", version = "1.0")
 public class MyFirstMod
 {
     public static final String MODID = "myfirstmod";
@@ -45,7 +45,7 @@ public class MyFirstMod
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(reddiamond,0, new ModelResourceLocation(MODID + ":reddiamond", "inventory"));
 
         GameRegistry.registerBlock(bombOre, "bomb_ore");
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(bombOre), 0, new ModelResourceLocation(MODID + ":bomb Ore", "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(bombOre), 0, new ModelResourceLocation(MODID + ":bomb_ore", "inventory"));
     }
     
     @EventHandler
