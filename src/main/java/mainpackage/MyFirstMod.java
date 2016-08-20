@@ -2,7 +2,7 @@ package mainpackage;
 
 import mainpackage.blocks.BlockBombOre;
 import items.ItemReddiamond;
-import mainpackage.items.ItemSuperCake;
+import items.ItemSuperCake;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

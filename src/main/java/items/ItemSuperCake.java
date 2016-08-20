@@ -1,9 +1,8 @@
-package mainpackage.items;
+package items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ActionResult;
@@ -13,10 +12,10 @@ import net.minecraft.world.World;
 /**
  * Created by Kriller on 20.08.2016.
  */
-public class ItemSuperCake extends Item {
+public class ItemSuperCake extends BasicItem {
 
     public ItemSuperCake(){
-        this.setUnlocalizedName("SuperCake");
+        super("SuperCake");
         this.setCreativeTab(CreativeTabs.FOOD);
     }
 
