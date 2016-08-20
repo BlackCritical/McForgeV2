@@ -36,21 +36,21 @@ public class MyFirstMod
     {
         GameRegistry.register(reddiamond);
         GameRegistry.register(superCake);
-
-
-    	ItemStack woolStack = new ItemStack(Blocks.WOOL, 4);
-    	ItemStack stoneStack = new ItemStack(Blocks.STONE);
     	
-    	GameRegistry.addShapelessRecipe(woolStack, stoneStack);
-
-
-        registerBlock(bombOre);
+    	registerBlock(bombOre);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         GameRegistry.addRecipe(new ItemStack(Blocks.TNT,32), "xxx", " r ", "xxx", 'x', bombOre, 'r', Items.REDSTONE);
+
+        GameRegistry.addShapedRecipe(new ItemStack(Blocks.TNT,6), "xx", "xx", 'x', bombOre);
+
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.GOLD_BLOCK, 4), Blocks.STONE, reddiamond);
+
+
+        GameRegistry.addSmelting(new ItemStack(bombOre), new ItemStack(reddiamond, 2), 200);
 
         proxy.registerClient();
     }
