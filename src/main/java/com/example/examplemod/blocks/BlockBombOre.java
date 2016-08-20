@@ -11,7 +11,7 @@ public class BlockBombOre extends Block{
 
     public BlockBombOre() {
         super(Material.ROCK);
-        this.setUnlocalizedName("SuperCake");
+        this.setUnlocalizedName("bomb_ore");
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     }
 }
