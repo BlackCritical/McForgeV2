@@ -1,7 +1,7 @@
 package mainpackage;
 
 import mainpackage.blocks.BlockBombOre;
-import mainpackage.items.ItemReddiamond;
+import items.ItemReddiamond;
 import mainpackage.items.ItemSuperCake;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;

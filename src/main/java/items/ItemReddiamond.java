@@ -1,4 +1,4 @@
-package mainpackage.items;
+package items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
