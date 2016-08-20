@@ -1,70 +1,24 @@
-[06:28:10] [Client thread/INFO]: Setting user: Player525
-[06:28:16] [Client thread/WARN]: Skipping bad option: lastServer:
-[06:28:16] [Client thread/INFO]: LWJGL Version: 2.9.4
-[06:28:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CakeMod
-[06:28:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:28:28] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[06:28:28] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[06:28:28] [Thread-8/INFO]: OpenAL initialized.
-[06:28:28] [Sound Library Loader/INFO]: Sound engine started
-[06:28:33] [Client thread/INFO]: Created: 16x16 textures-atlas
-[06:28:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CakeMod
-[06:28:38] [Client thread/INFO]: SoundSystem shutting down...
-[06:28:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[06:28:39] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[06:28:39] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[06:28:39] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[06:28:39] [Thread-10/INFO]: OpenAL initialized.
-[06:28:39] [Sound Library Loader/INFO]: Sound engine started
-[06:28:44] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[06:28:46] [Client thread/WARN]: Skipping bad option: lastServer:
-[06:28:47] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[06:28:57] [Server thread/INFO]: Starting integrated minecraft server version 1.10.2
-[06:28:57] [Server thread/INFO]: Generating keypair
-[06:28:57] [Server thread/INFO]: Preparing start region for level 0
-[06:28:58] [Server thread/INFO]: Preparing spawn area: 7%
-[06:28:59] [Server thread/INFO]: Preparing spawn area: 80%
-[06:29:00] [Server thread/INFO]: Changing view distance to 12, from 10
-[06:29:01] [Server thread/INFO]: Player525[local:E:f162aafb] logged in with entity id 561 at (-1.064684751184082, 84.0, 235.31678080068076)
-[06:29:01] [Server thread/INFO]: Player525 joined the game
-[06:29:03] [Server thread/INFO]: Saving and pausing game...
-[06:29:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[06:29:03] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@77e7fb7b[id=210893c2-ab0c-3341-8a41-02d79e29f9a4,name=Player525,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3060) [Minecraft.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:131) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_101]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_101]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
-	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
-[06:29:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[06:29:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[06:29:07] [Server thread/INFO]: Player525 has just earned the achievement [Taking Inventory]
-[06:29:07] [Client thread/INFO]: [CHAT] Player525 has just earned the achievement [Taking Inventory]
-[06:29:36] [Server thread/INFO]: Saving and pausing game...
-[06:29:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[06:29:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[06:29:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[06:29:36] [Server thread/INFO]: Stopping server
-[06:29:36] [Server thread/INFO]: Saving players
-[06:29:36] [Server thread/INFO]: Saving worlds
-[06:29:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[06:29:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[06:29:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[06:29:39] [Client thread/INFO]: Stopping!
-[06:29:39] [Client thread/INFO]: SoundSystem shutting down...
-[06:29:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[06:48:02] [Client thread/INFO]: Setting user: Player606
+[06:48:07] [Client thread/WARN]: Skipping bad option: lastServer:
+[06:48:07] [Client thread/INFO]: LWJGL Version: 2.9.4
+[06:48:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CakeMod
+[06:48:17] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[06:48:17] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[06:48:17] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[06:48:18] [Thread-8/INFO]: OpenAL initialized.
+[06:48:18] [Sound Library Loader/INFO]: Sound engine started
+[06:48:23] [Client thread/INFO]: Created: 16x16 textures-atlas
+[06:48:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:CakeMod
+[06:48:28] [Client thread/INFO]: SoundSystem shutting down...
+[06:48:28] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[06:48:28] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[06:48:29] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[06:48:29] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[06:48:29] [Thread-10/INFO]: OpenAL initialized.
+[06:48:29] [Sound Library Loader/INFO]: Sound engine started
+[06:48:34] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[06:48:35] [Client thread/WARN]: Skipping bad option: lastServer:
+[06:48:36] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[06:48:59] [Client thread/INFO]: Stopping!
+[06:48:59] [Client thread/INFO]: SoundSystem shutting down...
+[06:48:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

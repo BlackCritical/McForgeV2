@@ -35,7 +35,7 @@ public class MyFirstMod
     	
     	GameRegistry.addShapelessRecipe(woolStack, stoneStack);
     }
-    
+    //test
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
