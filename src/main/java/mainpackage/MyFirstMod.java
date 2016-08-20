@@ -60,7 +60,7 @@ public class MyFirstMod
 
     public static void registerBlock(BasicBlock block){
         GameRegistry.register(block);
-        GameRegistry.register(new ItemBlock(block).setRegistryName(block.name));
+        GameRegistry.register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
     }
 
 }

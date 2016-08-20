@@ -1,8 +1,7 @@
 package proxy;
 
-import blocks.BasicBlock;
-import items.BasicItem;
 import mainpackage.MyFirstMod;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -20,6 +19,15 @@ public class ClientProxy extends ServerProxy {
         registerBlockModel(MyFirstMod.bombOre);
     }
 
+    public static void registerItemModel(Item item){
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+    }
+
+    public static void registerBlockModel(Block block){
+        registerItemModel(Item.getItemFromBlock(block));
+    }
+
+    /*
     public static void registerItemModel(BasicItem item){
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(MyFirstMod.MODID + ":" + item.getSimpleName(), "inventory"));
     }
@@ -27,5 +35,5 @@ public class ClientProxy extends ServerProxy {
     public static void registerBlockModel(BasicBlock block){
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MyFirstMod.MODID + ":" + block.name, "inventory"));
     }
-
+    */
 }

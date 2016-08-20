@@ -1,6 +1,1 @@
-{
-  "parent": "builtin/generated",
-  "textures": {
-    "layer0": "myfirstmod:items/SuperCake"
-  }
-}
+{"parent": "builtin/generated", "textures": {"layer0": "myfirstmod:items/SuperCake"}}
