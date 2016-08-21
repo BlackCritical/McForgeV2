@@ -17,6 +17,7 @@ public class ClientProxy extends ServerProxy {
         registerItemModel(MyFirstMod.superCake);
 
         registerBlockModel(MyFirstMod.bombOre);
+        registerBlockModel(MyFirstMod.atomTNT);
     }
 
     public static void registerItemModel(Item item){
@@ -27,13 +28,4 @@ public class ClientProxy extends ServerProxy {
         registerItemModel(Item.getItemFromBlock(block));
     }
 
-    /*
-    public static void registerItemModel(BasicItem item){
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(MyFirstMod.MODID + ":" + item.getSimpleName(), "inventory"));
-    }
-
-    public static void registerBlockModel(BasicBlock block){
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MyFirstMod.MODID + ":" + block.name, "inventory"));
-    }
-    */
 }

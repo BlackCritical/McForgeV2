@@ -1,6 +1,7 @@
 package mainpackage;
 
 import blocks.BasicBlock;
+import blocks.BlockAtomTNT;
 import items.ItemReddiamond;
 import items.ItemSuperCake;
 import blocks.BlockBombOre;
@@ -27,6 +28,7 @@ public class MyFirstMod
     public static ItemReddiamond reddiamond = new ItemReddiamond();
 
     public static BlockBombOre bombOre = new BlockBombOre();
+    public static BlockAtomTNT atomTNT = new BlockAtomTNT();
 
     @SidedProxy(clientSide = "proxy.ClientProxy", serverSide = "proxy.ServerProxy")
     public static ServerProxy proxy;
@@ -38,6 +40,7 @@ public class MyFirstMod
         GameRegistry.register(superCake);
     	
     	registerBlock(bombOre);
+        registerBlock(atomTNT);
     }
 
     @EventHandler
