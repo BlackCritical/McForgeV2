@@ -42,7 +42,7 @@ public class MyFirstMod
     	registerBlock(bombOre);
         registerBlock(atomTNT);
     }
-
+    //hhh
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
