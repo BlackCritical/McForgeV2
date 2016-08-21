@@ -4,6 +4,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -32,14 +33,11 @@ public class BlockAtomTNT extends BasicBlock{
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
-        //if(ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getByNameOrId("Redstone Torch")))) {
+        if(ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getItemById(259)))) {
             worldIn.newExplosion(playerIn, pos.getX(), pos.getY(), pos.getZ(), 10, false, true);
             return true;
-    }
-
-    @Override
-    public boolean isFireSource(World world, BlockPos pos, EnumFacing side) {
-        return super.isFireSource(world, pos, side);
+        }
+        return false;
     }
 
     @Override
