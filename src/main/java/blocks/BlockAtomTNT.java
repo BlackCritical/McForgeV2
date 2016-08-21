@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
@@ -27,17 +27,17 @@ public class BlockAtomTNT extends BasicBlock{
     }
 
     @Override
-    public boolean canConnectRedstone(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
-        return true;
-    }
-
-    @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
         if(ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getItemById(259))) || ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getItemById(318)))) {
             worldIn.newExplosion(playerIn, pos.getX(), pos.getY(), pos.getZ(), 10, false, true);
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void onBlockDestroyedByExplosion(World worldIn, BlockPos pos, Explosion explosionIn) {
+        worldIn.newExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 10, false, true);
     }
 
     @Override
