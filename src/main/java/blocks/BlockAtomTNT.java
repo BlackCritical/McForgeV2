@@ -33,7 +33,7 @@ public class BlockAtomTNT extends BasicBlock{
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
-        if(ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getItemById(259)))) {
+        if(ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getItemById(259))) || ItemStack.areItemStacksEqual(heldItem, new ItemStack(Item.getItemById(318)))) {
             worldIn.newExplosion(playerIn, pos.getX(), pos.getY(), pos.getZ(), 10, false, true);
             return true;
         }
